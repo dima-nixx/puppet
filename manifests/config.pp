@@ -1,4 +1,4 @@
 class { 'dropbox::config':
     user     => 'dima.nixx@gmail.com',
-    password => '1047295',
+    password => '12345678',
 }
