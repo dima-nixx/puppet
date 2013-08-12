@@ -1,7 +1,7 @@
 class ati {
       package { "fglrx":
             ensure => installed,
-            require => package["lightdm"]'
+            require => package["lightdm"],
       }
       
       package {"lightdm":
@@ -10,7 +10,7 @@ class ati {
       
       package {"lightdm-gtk-greeter":
             ensure => installed,
-            require => package["lightdm"]'
+            require => package["lightdm"],
       }
       
 }
