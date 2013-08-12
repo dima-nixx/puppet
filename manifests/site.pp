@@ -27,7 +27,6 @@ node xbmc {
 include common
 include folders
 include webmin
-<<<<<<< HEAD
 #include deluge
 include dropbox
 }
