@@ -1,13 +1,3 @@
-group {
-"films":ensure => present;
-"music":ensure => present;
-"serials":ensure => present;
-"photo":ensure => present;
-"share":ensure => present;
-"soft":ensure => present;
-"games":ensure => present;
-"etc":ensure => present;
-
 group {"films":ensure => present}
 group {"music":ensure => present}
 group {"serials":ensure => present}
