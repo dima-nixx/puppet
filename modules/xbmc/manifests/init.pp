@@ -1,10 +1,10 @@
 class xbmc {
 
-    apt::ppa {'ppa:wsnipex/xbmc-xvba-frodo': ensure => installed}
+    apt::ppa {'ppa:wsnipex/xbmc-xvba-frodo': ensure => installed,}
     
-    package {'xbmc': ensure => present}
+    package {'xbmc': ensure => installed,}
     
-    package {'xbmc-bin': ensure => present,}
+    package {'xbmc-bin': ensure => installed,}
     
     user { 'xbmc':
         ensure           => 'present',
