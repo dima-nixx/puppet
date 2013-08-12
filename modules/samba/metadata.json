@@ -1,0 +1,29 @@
+{
+  "name": "ajjahn-samba",
+  "version": "0.1.1",
+  "source": "UNKNOWN",
+  "author": "Adam Jahn",
+  "license": "Apache License, Version 2.0",
+  "summary": "Module for provisioning Samba",
+  "description": "Module for provisioning Samba",
+  "project_page": "https://github.com/ajjahn/puppet-samba",
+  "dependencies": [
+
+  ],
+  "types": [
+
+  ],
+  "checksums": {
+    "Gemfile": "7634b15f0f29337cd893809af0fae03a",
+    "Gemfile.lock": "f8ea3fb78147ee937085defaf2799c7b",
+    "Modulefile": "8f40191271b768ed2c337e32d103b95f",
+    "README.md": "cc6cc067deb77fa5f7362afd100d4e0a",
+    "Rakefile": "b9b1edf5a684e947b1b7c1a30420ffad",
+    "manifests/init.pp": "d03ac753489ddb13442cda4eea791a12",
+    "manifests/server/config.pp": "c71673f6010df6c1a3cb7ef8ccbff7a0",
+    "manifests/server/install.pp": "4af8f8d01f1c9d1684e4909b2f902248",
+    "manifests/server/service.pp": "5db183403159c6f6c92c76fea889211a",
+    "manifests/server/share.pp": "21561aa0538990d7dacd33083833a0f4",
+    "manifests/server.pp": "9e0582c457b4c2ecd7406d47ebab3c8d"
+  }
+}
