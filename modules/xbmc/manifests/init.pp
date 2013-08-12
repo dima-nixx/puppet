@@ -1,15 +1,11 @@
 # Class to install and configure deluge daemon
 class xbmc {
 
-    package {
-        'xbmc': ensure => present,
-        'xbmc-bin': ensure => present,
-    	require => apt::ppa ['ppa:wsnipex/xbmc-xvba-frodo'],
-    }
+    apt::ppa {'ppa:wsnipex/xbmc-xvba-frodo':}
+    package {'xbmc': ensure => present}
+    package {'xbmc-bin': ensure => present,}
     
-    apt::ppa {'ppa:wsnipex/xbmc-xvba-frodo':
-        }
-
+    
 #    file {
 #       '/etc/init//.conf':
 #          ensure => file,
