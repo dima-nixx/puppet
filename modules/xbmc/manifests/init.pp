@@ -14,7 +14,8 @@ class xbmc {
         }
     
     
-    file { '/etc/lightdm/lightdm.conf':
+    file { 'lightdm.conf':
+        path => '/etc/lightdm/lightdm.conf',
         ensure => file,
         mode   => '0644',
         owner  => root,
@@ -22,7 +23,8 @@ class xbmc {
         source => 'puppet:///modules/xbmc/files/lightdm.conf';
     }
     
-    file { '/usr/share/xsessions/XBMC.desktop':
+    file { 'XBMC.desktop':
+        path => '/usr/share/xsessions/XBMC.desktop',
         ensure => file,
         mode   => '0644',
         owner  => root,
