@@ -1,16 +1,17 @@
-# Class to install and configure deluge daemon
 class xbmc {
 
     apt::ppa {'ppa:wsnipex/xbmc-xvba-frodo':}
+    
     package {'xbmc': ensure => present}
+    
     package {'xbmc-bin': ensure => present,}
     
-   user { 'xbmc':
-  ensure           => 'present',
-  groups           => ['video', 'audio'],
-  home             => '/home/xbmc/',
-  shell            => '/bin/bash',
-  }
+    user { 'xbmc':
+        ensure           => 'present',
+        groups           => ['video', 'audio'],
+        home             => '/home/xbmc/',
+        shell            => '/bin/bash',
+        }
     
     
     file { '/etc/lightdm/lightdm.conf':
