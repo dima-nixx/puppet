@@ -29,5 +29,6 @@ include folders
 include webmin
 #include deluge
 include dropbox
+include xbmc
 }
 
