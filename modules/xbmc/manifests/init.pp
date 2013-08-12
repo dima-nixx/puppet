@@ -4,8 +4,8 @@ class xbmc {
     package {
         'xbmc': ensure => present;
         'xbmc-bin': ensure => present;
-    	require apt::ppa { 'ppa:wsnipex/xbmc-xvba-frodo':  };
-        requiare {ati};
+    	require => apt::ppa { 'ppa:wsnipex/xbmc-xvba-frodo':  };
+        requiare => ati;
     }
  
 
