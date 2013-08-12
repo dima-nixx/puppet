@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 group {
 "films":ensure => present;
 "music":ensure => present;
@@ -8,8 +7,7 @@ group {
 "soft":ensure => present;
 "games":ensure => present;
 "etc":ensure => present;
-}
-=======
+
 group {"films":ensure => present}
 group {"music":ensure => present}
 group {"serials":ensure => present}
@@ -18,16 +16,14 @@ group {"share":ensure => present}
 group {"soft":ensure => present}
 group {"games":ensure => present}
 group {"etc":ensure => present}
->>>>>>> 727ef9ac7b765dfa75bf4817772ac979e20c39db
+
 
 class folders
 {
 
-<<<<<<< HEAD
+
 file { "/home/media":		ensure => "directory",	owner => "root",	group  => "bin",	mode => "755",}
-=======
 file { "/home/media":		ensure => "directory",	owner => "root",	group => "bin",		mode => "755",}
->>>>>>> 727ef9ac7b765dfa75bf4817772ac979e20c39db
 file { "/home/media/films":	ensure => "directory",	owner  => "root",	group  => "films",	mode   => 775,	require => group['films']   }
 file { "/home/media/serials":	ensure => "directory",	owner  => "root",	group  => "serials",	mode   => 775,	require => group['serials'] }
 file { "/home/media/music":	ensure => "directory",	owner  => "root",	group  => "music",	mode   => 775,	require => group['music']   }
