@@ -1,13 +1,3 @@
-group {
-"films":ensure => present;
-"music":ensure => present;
-"serials":ensure => present;
-"photo":ensure => present;
-"share":ensure => present;
-"soft":ensure => present;
-"games":ensure => present;
-"etc":ensure => present;
-
 group {"films":ensure => present}
 group {"music":ensure => present}
 group {"serials":ensure => present}
@@ -20,9 +10,6 @@ group {"etc":ensure => present}
 
 class folders
 {
-
-
-file { "/home/media":		ensure => "directory",	owner => "root",	group  => "bin",	mode => "755",}
 file { "/home/media":		ensure => "directory",	owner => "root",	group => "bin",		mode => "755",}
 file { "/home/media/films":	ensure => "directory",	owner  => "root",	group  => "films",	mode   => 775,	require => group['films']   }
 file { "/home/media/serials":	ensure => "directory",	owner  => "root",	group  => "serials",	mode   => 775,	require => group['serials'] }
@@ -33,6 +20,5 @@ file { "/home/media/soft":	ensure => "directory",	owner  => "root",	group  => "s
 file { "/home/media/games":	ensure => "directory",	owner  => "root",	group  => "games",	mode   => 775,	require => group['games']   }
 file { "/home/media/etc":	ensure => "directory",	owner  => "root",	group  => "etc",	mode   => 770,	require => group['etc']     }
 file { "/home/media/temp":	ensure => "directory",	owner  => "root",	group  => "users",	mode   => 777,				    }
-
 }
 

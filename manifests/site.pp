@@ -8,8 +8,6 @@ import 'webmin.pp'
 import 'common.pp'
 import 'folders.pp'
 import 'webmin.pp'
-import 'dropbox.pp'
-
 
 class common {
 include ssh
@@ -29,5 +27,6 @@ include folders
 include webmin
 #include deluge
 include dropbox
+include xbmc
 }
 
