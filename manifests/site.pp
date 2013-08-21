@@ -3,7 +3,6 @@ Exec { path => [ "/bin/", "/sbin/" , "/usr/bin/", "/usr/sbin/" ] }
 
 import 'config.pp'
 import 'common.pp'
-import 'folders.pp'
 import 'webmin.pp'
 import 'folders.pp'
 import 'webmin.pp'
