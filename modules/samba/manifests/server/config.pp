@@ -12,8 +12,8 @@ class samba::server::config {
     owner   => 'root',
     group   => 'root',
     mode    => '0644',
-    source => [puppet:///modules/samba/smb.conf]
-    require => Class['samba::server::install']],
+    source => [puppet:///modules/samba/smb.conf],
+    require => Class['samba::server::install'],
     notify  => Class['samba::server::service']
   }
   
