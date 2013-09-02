@@ -1,12 +1,16 @@
 class xbmc {
 
-  service {'deluged': 
-				ensure => running,
-  			ensure => enable,
-  			require => Package[''],
-				}
-  
-  package {'deluged': ensure => installed,}
+	service {'deluged': 
+		ensure => running,
+		ensure => enable,
+  		require => Package['deluged'],
+		}
+
+  	package {'deluged': ensure => installed,}
+    
+    
+    
+    
     
 #   user { 'xbmc':
 #        ensure           => 'present',
